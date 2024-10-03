@@ -24,8 +24,8 @@ El promedio de edades abordo es de 30 años
 view(avg_age)
 
 ### Selecciona las los campos  Ticket, Name, Survived, Age
-### filtrar las personas que sobrevivieran 
-### filtrar las personas que son mayores de 18
+### Filtrar las personas que sobrevivieran 
+### Filtrar las personas que son mayores de 18
 
 titanic %>%
   select(Ticket, Name, Survived, Age) %>%
@@ -37,7 +37,7 @@ titanic %>%
 
 
 ### Selecciona Name, Sex, survived, Age, Embarked
-### filtrar las personas que no sobrevivieran 
+### Filtrar las personas que no sobrevivieran 
 ### Filtrar las edades que marquen NULL en la columna de Age
 
 titanic %>%

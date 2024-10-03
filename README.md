@@ -112,7 +112,7 @@ La grafica arroja en la visualiacion que las personas que lograron sobrevivieron
 
 
 
- `Grafica donde se ubican las personas que sobrevivieron y donde embarcaron`
+ >  Grafica donde se ubican las personas que sobrevivieron y donde embarcaron
 
 
 ```

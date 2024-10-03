@@ -3,11 +3,12 @@ En este repositorio se presenta las consultas realizadas en el software de R  de
 
 
 ## Objetivo
+
 Realizacion de un analisis de una base de datos del titanic de las  personas que sobrevivieron con ayuda del software Rstudio.
 
 ## Producto
 
-El analisis realizado arroja datos curiosos de las personas abrodo del Titanic, como a continuación se ira desglosando.
+El análisis realizado arroja datos curiosos de las personas a bordo del Titanic, como se desglosa a continuación.
 
 Crear una tabla nueva por Pclass 
 
@@ -15,7 +16,7 @@ Crear una tabla nueva por Pclass
 type_class <- filter(titanic, Pclass %in% c("Lower Class", "Middle Class", "Upper Class"))
 ```
 
-Promedio de edades a bordo del Titanic
+> Promedio de edades a bordo del Titanic
 
 ```
 total_age <- sum(titanic$Age, na.rm = TRUE)
@@ -26,7 +27,7 @@ avg_age <- mean(titanic$Age, na.rm = TRUE)
 ```
 
 
-El promedio de edades abordo es de 30 años
+> El promedio de edades abordo es de 30 años
 
 
 ```
@@ -65,7 +66,7 @@ titanic %>%
 ![age](https://github.com/user-attachments/assets/729ed50f-eb5f-44d6-90fc-84ae31ffcf3e)
 
 
-Crear una grafica de barras de la cantidad de personas que tuvieron deceso en el Viaje  
+Crear una gráfica de barras de la cantidad de personas que tuvieron deceso en el Viaje:  
 
 ```
 titanic %>%
@@ -77,9 +78,9 @@ titanic %>%
 ![survived](https://github.com/user-attachments/assets/d623b754-2b93-4b4f-95a2-c282672176d0)
 
 
-> Como se muestra en la grafica mas del 50% de las personas que viajaron tuvieron deceso 
+> Como se muestra en la grafica mas del 50% de las personas que viajaron tuvieron fallecieron. 
 
-Grafica los puntos de Embarcacion que tubo el barco
+Gráfica los puntos de Embarcacion que tubo el barco:
 
 
 `titanic %>%
@@ -92,7 +93,7 @@ Grafica los puntos de Embarcacion que tubo el barco
 > Se muestra que en Southampton fue el mayor donde se abordo el mayor numero de personas.
   
 
- Grafica donde se ubican las personas que sobrevivieron y el Tipo de clase que sobrevivio
+ Gráfica donde se ubican las personas que sobrevivieron y el Tipo de clase que sobrevivio:
 
 
 ```
@@ -111,7 +112,7 @@ titanic %>%
 
 
 
- Grafica donde se ubican las personas que sobrevivieron y donde embarcaron
+ Gráfica donde se ubican las personas que sobrevivieron y donde embarcaron:
 
 
 ```

@@ -10,6 +10,17 @@ Realizacion de un analisis de una base de datos del titanic de las  personas que
 
 El análisis realizado arroja datos curiosos de las personas a bordo del Titanic, como se desglosa a continuación.
 
+
+Se usaron las siguientes librarias 
+
+```
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+```
+
 Crear una tabla nueva por Pclass 
 
 ```

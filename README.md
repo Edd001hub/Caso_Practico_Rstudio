@@ -34,6 +34,9 @@ titanic %>%
   filter(Age > 18) %>%
   head(15)
 
+  ![yes](https://github.com/user-attachments/assets/0b9888e6-06b7-4332-a660-74b97b3dda47)
+
+
 ### Selecciona Name, Sex, survived, Age, Embarked
 ### filtrar las personas que no sobrevivieran 
 ### Filtrar las edades que marquen NULL en la columna de Age
@@ -44,11 +47,17 @@ titanic %>%
   filter(is.na(Age)) %>%
   head(15)
 
+![age](https://github.com/user-attachments/assets/729ed50f-eb5f-44d6-90fc-84ae31ffcf3e)
+
+
 ### Crear una grafica de barras de la cantidad de personas que tuvieron deceso en el Viaje  
 
 titanic %>%
   ggplot(aes(x = Survived)) +
   geom_bar()
+
+![survived](https://github.com/user-attachments/assets/d623b754-2b93-4b4f-95a2-c282672176d0)
+
 
 Como se muestra en la grafica mas del 50% de las personas que viajaron tuvieron deceso 
 
@@ -58,6 +67,9 @@ titanic %>%
   ggplot(aes(x = Embarked)) +
   geom_bar()
 
+![embarked](https://github.com/user-attachments/assets/0ea4174f-1f71-4e74-a40f-dd472cfcedf5)
+  
+
 Se muestra que en Southampton fue el mayor donde se abordo el mayor numero de personas.
   
 ### Grafica donde se ubican las personas que sobrevivieron y el Tipo de clase que sobrevivio
@@ -66,6 +78,10 @@ titanic %>%
   ggplot(aes(x = Survived, y = Age, color = Pclass)) + 
   geom_point()
 
+
+![Pclass](https://github.com/user-attachments/assets/2780a18e-cc26-42ba-b90b-8492cd09f0a9)
+
+
 La grafica arroja en la visualiacion que las personas que lograron sobrevivieron son de Upper Class  de un promedio de personas mayores de 20 años
 
 ### Grafica donde se ubican las personas que sobrevivieron y donde embarcaron
@@ -73,6 +89,10 @@ La grafica arroja en la visualiacion que las personas que lograron sobrevivieron
  titanic %>%
   ggplot(aes(x = Survived, y = Age, color = Embarked)) + 
   geom_point()
+  
+
+![edad, embarked](https://github.com/user-attachments/assets/f629d114-4694-482f-bb22-ac5ed6772a24)
+
 
   Como se puede observar en la grafica muestra que en la mayoria fallecieron las personas embarcadas en Southampton
 

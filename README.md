@@ -9,7 +9,6 @@ Realizacion de un analisis de una base de datos del titanic de las  personas que
 
 El analisis realizado arroja datos curiosos de las personas abrodo del Titanic, como a continuación se ira desglosando.
 
-
 ### Crear una tabla nueva por Pclass 
 
 type_class <- filter(titanic, Pclass %in% c("Lower Class", "Middle Class", "Upper Class"))

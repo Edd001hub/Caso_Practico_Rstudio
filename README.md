@@ -46,7 +46,9 @@ view(avg_age)
 ```
 
 Selecciona las los campos  Ticket, Name, Survived, Age
+
 Filtrar las personas que sobrevivieran 
+
 Filtrar las personas que son mayores de 18
 
 ```
@@ -62,7 +64,9 @@ titanic %>%
 
 
 Selecciona Name, Sex, survived, Age, Embarked
+
 Filtrar las personas que no sobrevivieran 
+
 Filtrar las edades que marquen NULL en la columna de Age
 
 ```

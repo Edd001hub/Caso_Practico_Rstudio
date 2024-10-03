@@ -9,14 +9,13 @@ Realizacion de un analisis de una base de datos del titanic de las  personas que
 
 El analisis realizado arroja datos curiosos de las personas abrodo del Titanic, como a continuación se ira desglosando.
 
-### Crear una tabla nueva por Pclass 
+Crear una tabla nueva por Pclass 
 
 ```
 type_class <- filter(titanic, Pclass %in% c("Lower Class", "Middle Class", "Upper Class"))
 ```
 
-
-# Promedio de edades a bordo del Titanic
+Promedio de edades a bordo del Titanic
 
 ```
 total_age <- sum(titanic$Age, na.rm = TRUE)
@@ -34,10 +33,9 @@ El promedio de edades abordo es de 30 años
 view(avg_age)
 ```
 
-
-### Selecciona las los campos  Ticket, Name, Survived, Age
-### Filtrar las personas que sobrevivieran 
-### Filtrar las personas que son mayores de 18
+Selecciona las los campos  Ticket, Name, Survived, Age
+Filtrar las personas que sobrevivieran 
+Filtrar las personas que son mayores de 18
 
 ```
 titanic %>%
@@ -51,9 +49,9 @@ titanic %>%
   ![yes](https://github.com/user-attachments/assets/0b9888e6-06b7-4332-a660-74b97b3dda47)
 
 
-### Selecciona Name, Sex, survived, Age, Embarked
-### Filtrar las personas que no sobrevivieran 
-### Filtrar las edades que marquen NULL en la columna de Age
+Selecciona Name, Sex, survived, Age, Embarked
+Filtrar las personas que no sobrevivieran 
+Filtrar las edades que marquen NULL en la columna de Age
 
 ```
 titanic %>%
@@ -67,7 +65,7 @@ titanic %>%
 ![age](https://github.com/user-attachments/assets/729ed50f-eb5f-44d6-90fc-84ae31ffcf3e)
 
 
-### Crear una grafica de barras de la cantidad de personas que tuvieron deceso en el Viaje  
+Crear una grafica de barras de la cantidad de personas que tuvieron deceso en el Viaje  
 
 ```
 titanic %>%
@@ -79,9 +77,9 @@ titanic %>%
 ![survived](https://github.com/user-attachments/assets/d623b754-2b93-4b4f-95a2-c282672176d0)
 
 
-Como se muestra en la grafica mas del 50% de las personas que viajaron tuvieron deceso 
+> Como se muestra en la grafica mas del 50% de las personas que viajaron tuvieron deceso 
 
-` Grafica los puntos de Embarcacion que tubo el barco`
+Grafica los puntos de Embarcacion que tubo el barco
 
 
 `titanic %>%
@@ -91,9 +89,10 @@ Como se muestra en la grafica mas del 50% de las personas que viajaron tuvieron 
 ![embarked](https://github.com/user-attachments/assets/0ea4174f-1f71-4e74-a40f-dd472cfcedf5)
   
 
-Se muestra que en Southampton fue el mayor donde se abordo el mayor numero de personas.
+> Se muestra que en Southampton fue el mayor donde se abordo el mayor numero de personas.
   
-### Grafica donde se ubican las personas que sobrevivieron y el Tipo de clase que sobrevivio
+
+ Grafica donde se ubican las personas que sobrevivieron y el Tipo de clase que sobrevivio
 
 
 ```
@@ -107,12 +106,12 @@ titanic %>%
 ![Pclass](https://github.com/user-attachments/assets/2780a18e-cc26-42ba-b90b-8492cd09f0a9)
 
 
-La grafica arroja en la visualiacion que las personas que lograron sobrevivieron son de Upper Class  de un promedio de personas mayores de 20 años
+> La grafica arroja en la visualiacion que las personas que lograron sobrevivieron son de Upper Class  de un promedio de personas mayores de 20 años
 
 
 
 
- >  Grafica donde se ubican las personas que sobrevivieron y donde embarcaron
+ Grafica donde se ubican las personas que sobrevivieron y donde embarcaron
 
 
 ```
@@ -121,10 +120,9 @@ titanic %>%
   geom_point()
   ```
 
-  
 
 ![edad, embarked](https://github.com/user-attachments/assets/f629d114-4694-482f-bb22-ac5ed6772a24)
 
 
-  Como se puede observar en la grafica muestra que en la mayoria fallecieron las personas embarcadas en Southampton
+  > Como se puede observar en la grafica muestra que en la mayoria fallecieron las personas embarcadas en Southampton
 
